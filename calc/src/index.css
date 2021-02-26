@@ -11,3 +11,47 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.calculator {
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 2px solid navy;
+  border-radius: 1em;
+  width: 25em;
+  height: 30em;
+}
+
+.buttons {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.calculatorButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  margin: 0;
+  height: 5em;
+  width: 5em;
+}
+
+.display {
+  border: 1px solid gray;
+  height: 4em;
+  width: 100%;
+  line-height: 1.5em;
+  text-align: right;
+  padding-right: 1em;
+  background-color: rgb(198, 225, 213);
+}
+
+#clearbutton, #deletebutton {
+  width: 9em !important;
+}
