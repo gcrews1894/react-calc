@@ -12,6 +12,18 @@ code {
     monospace;
 }
 
+h1 {
+  color: aliceblue;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(55, 55, 55);
+  height: 100vh;
+}
+
 .calculator {
   padding: 1em;
   margin-left: auto;
@@ -19,10 +31,10 @@ code {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border: 2px solid navy;
   border-radius: 1em;
   width: 25em;
   height: 30em;
+  background-color: lightgrey;
 }
 
 .buttons {
@@ -54,4 +66,7 @@ code {
 
 #clearbutton, #deletebutton {
   width: 9em !important;
+}
+#zerobutton, #equalbutton {
+  width: 9em;
 }

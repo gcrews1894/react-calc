@@ -31,10 +31,18 @@ export default function Calculator () {
     }
 
 
-    const buttons = ['clear', 'delete', '/', '7', '8', '9', '*', '4', '5', '6', '-', '1', '2', '3', '+', '+/-', '0', '.', '=']
+    const buttons = ['clear', 'delete', '/', '7', '8', '9', '*', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '=']
     const buttonDisplay = []
 
-    buttons.forEach(el => buttonDisplay.push(<Button id={el} key={el} value={el} callBack={handleClick} />))
+    buttons.forEach(el => {
+        if (el === '0') {
+            buttonDisplay.push(<Button id='zero' key={el} value={el} callBack={handleClick} />)
+        } else if (el === '=') {
+            buttonDisplay.push(<Button id='equal' key={el} value={el} callBack={handleClick} />)
+        } else {
+            buttonDisplay.push(<Button id={el} key={el} value={el} callBack={handleClick} />)
+        }
+    })
 
     return (
         <div className="calculator">

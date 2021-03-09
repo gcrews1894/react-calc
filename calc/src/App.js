@@ -5,7 +5,6 @@ import Calculator from './containers/calculator';
 function App() {
   return (
     <div className="App">
-      <h1>Calculator Practice</h1>
       <Calculator />
     </div>
   );
